@@ -60,3 +60,9 @@ exclude:
   - "LICENSE"
   - "READE.md"
   - "screenshot.png"
+
+# Custom vars
+comment:
+  provider: "disqus"
+  dispus:
+    shortname: "sinji2102"
