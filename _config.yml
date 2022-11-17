@@ -1,6 +1,6 @@
 # Site settings
 title: github.io
-baseurl: "/ap"
+# baseurl: "/ap"
 url: "https://kssim.github.io"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
