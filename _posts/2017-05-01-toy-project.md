@@ -4,6 +4,7 @@ title: "Toy Project"
 info: "toy project"
 tech: "python"
 type: Toy
+comment: true
 ---
 
 ## Toy Project 1.
