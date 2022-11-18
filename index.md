@@ -19,7 +19,6 @@ If you are curious about my portfolio, please check the **Portfolio** at the top
 
 - Kookmin Univ. Software (2022/03 ~ )
   - VPN Development Company
-  - Team Leader of VPN Development Div.
 
 <br/>
 
