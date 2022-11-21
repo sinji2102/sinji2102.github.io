@@ -18,7 +18,7 @@ If you are curious about my portfolio, please check the **Portfolio** at the top
     - Developde Application User Interface. -->
 
 - Kookmin Univ. Software (2022/03 ~ )
-  - VPN Development Company
+  <!-- - VPN Development Company -->
 
 <br/>
 
