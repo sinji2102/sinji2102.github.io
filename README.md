@@ -123,8 +123,8 @@ comment:
 11. 댓글을 허용하고 싶은 곳에 `comments: true`로 지정
 
 ### PLUS. 원격에서 깨지는 문제 해결
-localhost:4000에서는 잘 나오는데 원격에서는 내용이 깨져서 나오는 문제 발생
-_config.yml에서 baseurl 삭제  
+localhost:4000에서는 잘 나오는데 원격에서는 내용이 깨져서 나오는 문제 발생  
+_config.yml에서 **baseurl** 삭제  
 ![baseurl](assets/img/baseurl.jpg)
 
 - 이전에는 `bundle exec jekyll serve --baseurl`으로 실행해야 했으나, 주석 처리 하면 `bundle exec jekyll serve`으로 실행 가능
