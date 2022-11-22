@@ -85,7 +85,7 @@ Markdown 형식을 통해 내용 작성
 4. Platform 중 **Jekyll** 선택  
 5. Install Instruction을 읽어본 후 **Configure**를 눌러 다음을 진행  
 6. **Website URL**에 사이트 주소(https://sinji2102.github.io/) 입력 후 Next로 이동  
-7. Comment 정책 선택 (Balanced와 Strict 중 나는 Balanced 선택)  
+7. Comment 정책 선택
 8. **Complete Setup**을 눌러 설정 마무리  
 9. _config.yml에 다음과 같은 key-value 추가
 ```
