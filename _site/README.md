@@ -1,139 +1,68 @@
-# AP [![Build Status](https://travis-ci.org/kssim/ap.svg?branch=master)](https://travis-ci.org/kssim/ap.svg?branch=master)
+# [sinji2102.github.io](https://sinji2102.github.io/)
 
-"AP" is [Jekyll](https://jekyllrb.com/) theme for career. This theme is free and open-source.  
-Based on Chester How's tale-theme(https://github.com/chesterhow/tale) with a few new features:
+<br/>
 
-- SNS Link
-- Google Analytics
-- Responsive design
-- Upgrading awesome fonts and modifying some layouts.
-- Use "About" as main.
-  - It can be written in simple resume form.
-- Change "Post" to "Project Portfolio"
-  - You can manage your project experience just like running a blog.
+## Build 과정
 
-# Preview
+### 1. Repository 생성
 
-[![AP Screenshot](https://github.com/kssim/ap/blob/master/screenshot.png?raw=true)](https://kssim.github.io/ap/)
+Github에서 \<username>.github.io 이름의 Repository 생성
 
-# Usage
+### 2. Local-Remote Repository 연동
 
-1. Fork and clone the AP repo:
-   - git clone https://github.com/kssim/ap.git
-2. Install Jekyll:
-   - gem install jekyll
-3. Install the theme's dependencies
-   - bundle install
-4. Customize the theme
-   - update \_config.yml
-5. Run the Jekyll server
-   - jekyll serve
+Remote Repository의 주소를 복사 후
+`git clone <repo_name> <path>`로 clone
 
-## Structure
+`git commit -m "<commit msg>"`로 커밋 남기기
+`git branch -M main`으로 현재 branch의 이름을 main으로 변경
+`git status`로 현재 상태 확인 후 `git add .`로 변경파일 추가
+`git push origin main`으로 main에 로컬 변경사항 push
 
-- Here are the main files of the template
+### 3. Jekyll 설치
 
-```bash
-ap
-├── _includes                  # theme includes
-├── _layouts                   # theme layouts (see below for details)
-├── _posts                     # Project & Portfolio posts
-├── _sass                      # Sass partials
-├── portfolio                  # Main page for "portfolio"
-├── assets
-|  ├── css                     # font-awesome and main css
-|  ├── fonts                   # Font-Awesome
-|  ├── favicon.ico             # Favicon
-|  └── img                     # Images used for "about" page
-├── _config.yml                # sample configuration
-└── index.md                   # Resume to show on "about" page
+[Windows용 Jekyll 가이드 참조](https://jekyllrb-ko.github.io/docs/installation/windows/)
+
+[Windows용 Ruby + Devkit](https://rubyinstaller.org/downloads/)  
+위의 링크를 통해 Ruby 설치
+
+Jekyll과 Bundler를 설치  
+`gem install jekyll bundler`
+
+Jekyll이 올바르게 설치되었는지 확인  
+`jekyll -v`
+
+### 4. Jekyll 사이트 생성
+
+현재 디렉토리(.)에 Jekyll을 설치
+`jekyll new . --force`
+
+Jekyll 시작하기  
+`bundle exec jekyll serve` 을 실행 후,  
+localhost:4000 접속
+
+- LoadError 발생 시 webrick 파일 설치
+  `bundle add webtick`
+
+### 5. 테마 적용하기
+
+[다음](http://jekyllthemes.org/)에서 원하는 테마 선택
+
+[원하는 테마](https://github.com/poole/lanyon)를 git clone해서 로컬에 받아오기
+
+테마 파일들을 로컬 저장소에 반영하기  
+이때, 의존성을 감안하여 \_posts를 제외하고 테마를 덮어쓰기
+
+### 6. Customize
+
+블로그 포스팅은 **\_posts** 폴더에서 진행  
+\_post에 **YYYY-MM-DD-TITLE.md** 형태로 새로운 문서를 작성
+
 ```
-
-## Configure AP
-
-Open \_config.yml in a text editor to change most of the blog's settings.
-
-### Site Configuration
-
-Configure Jekyll as your own blog or with a subpath in in \_config.yml:
-
-```yml
-title: [Website Title]
-baseurl: [Website Subpath]
-url: [Github Page Url]
-google_analytics: [Google Analytics Tracking ID]
-```
-
-Please configure this before using the theme.  
-And to enable Google Analytics, add your [Traking ID](https://support.google.com/analytics/answer/1008080?visit_id=1-636579797402349951-2693679291&rd=1)
-
-### About You
-
-Meta variables hold basic information about your profile and resume.  
-Change these variables in \_config.yml:
-
-```yml
-author:
-  name: [Your Name]
-  desc: [Short introduction]
-  email: [Your E-Mail Address]
-  selfie: [Your Avatar]
-```
-
-Please configure this before using the theme.
-
-### SNS Information
-
-Your SNS information to display at the bottom of the page.  
-All values except "email" are text values.
-
-```yml
-social:
-  email: true
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github:
-  google_plus:
-  instagram:
-  keybase:
-  linkedin:
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:
-  steam:
-  tumblr:
-  gitlab:
-  twitter:
-  vimeo:
-  wordpress:
-  youtube:
-  default_txt: "Follow On"
-```
-
-## Portfolio Schema
-
-```markdown
 ---
 layout: post
-title: [Project title to show in portfolio list]
-info: [A brief introduction to show in portfolio list]
-tech: [The technologies used in the project to show in portfolio list]
-type:
-  [
-    Property of the project to be displayed in front of the project's info(toy or company name),
-  ]
+title: "제목"
 ---
 ```
 
-## Other formats
-
-It uses the markdown syntax by default, and there is no format other than the one mentioned above.  
-You can use it as you like.
-
-## License
-
-[The MIT License (MIT)](https://raw.githubusercontent.com/kssim/ap/master/LICENSE)
+위와 같은 형식으로 Post 문서를 작성  
+Markdown 형식을 통해 내용 작성
