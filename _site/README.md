@@ -13,6 +13,11 @@ Github에서 \<username>.github.io 이름의 Repository 생성
 Remote Repository의 주소를 복사 후
 `git clone <repo_name> <path>`로 clone
 
+`git commit -m "<commit msg>"`로 커밋 남기기
+`git branch -M main`으로 현재 branch의 이름을 main으로 변경
+`git status`로 현재 상태 확인 후 `git add .`로 변경파일 추가
+`git push origin main`으로 main에 로컬 변경사항 push
+
 ### 3. Jekyll 설치
 
 [Windows용 Jekyll 가이드 참조](https://jekyllrb-ko.github.io/docs/installation/windows/)
