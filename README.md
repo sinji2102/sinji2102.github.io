@@ -55,6 +55,9 @@ _post에 __YYYY-MM-DD-TITLE.md__ 형태로 새로운 문서를 작성
 ---
 layout: post
 title: "제목"
+info: "설명"
+tech: "테크"
+type: "type"
 ---
 ```
 위와 같은 형식으로 Post 문서를 작성  
@@ -65,10 +68,10 @@ Markdown 형식을 통해 내용 작성
 "I want to install Disqus on my site" 선택  
 사이트 정보 입력 (이때, **Website Name 기억해두기**) 
 Platform 중 **Jekyll** 선택  
-Install Instruction을 읽어본 후 **Configure**를 눌러 다음을 진행
-**Website URL**에 사이트 주소(https://sinji2102.github.io/) 입력 후 Next로 이동
-Comment 정책 선택 (Balanced와 Strict 중 나는 Balanced 선택함)  
-**Complete Setup**을 눌러 설정 마무리
+Install Instruction을 읽어본 후 **Configure**를 눌러 다음을 진행  
+**Website URL**에 사이트 주소(https://sinji2102.github.io/) 입력 후 Next로 이동  
+Comment 정책 선택 (Balanced와 Strict 중 나는 Balanced 선택)  
+**Complete Setup**을 눌러 설정 마무리  
 _config.yml에 다음과 같은 key-value 추가
 ```
 # Custom vars
