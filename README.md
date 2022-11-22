@@ -1,5 +1,6 @@
 # [sinji2102.github.io](https://sinji2102.github.io/)
 
+![mainpage](assets/img/mainpage.jpg)
 
 ## Build 과정
 ### 1. Repository 생성
@@ -8,6 +9,11 @@ Github에서 \<username>.github.io 이름의 Repository 생성
 ### 2. Local-Remote Repository 연동
 Remote Repository의 주소를 복사한 후  
 `git clone <복사한 Remote Repository의 주소> <path>`로 clone
+
+`git commit -m "<commit msg>"`로 커밋 남기기
+`git branch -M main`으로 현재 branch의 이름을 main으로 변경
+`git status`로 현재 상태 확인 후 `git add .`로 변경파일 추가
+`git push origin main`으로 main에 로컬 변경사항 push
 
 ### 3. Jekyll 설치
 [Windows용 Jekyll 가이드 참조](https://jekyllrb-ko.github.io/docs/installation/windows/)
