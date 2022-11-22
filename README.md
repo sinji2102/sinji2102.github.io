@@ -44,8 +44,8 @@ localhost:4000 접속
 - [원하는 테마](https://github.com/kssim/ap)를 git clone해서 로컬에 받아오기
 ![ThemeClone](assets/img/ThemeClone.jpg)
 
-테마 파일들을 로컬 저장소에 반영하기  
-이때, 의존성을 감안하여 _posts를 제외하고 테마를 덮어쓰기
+- 테마 파일들을 로컬 저장소에 반영하기  
+- 이때, 의존성을 감안하여 _posts를 제외하고 테마를 덮어쓰기
 
 ### 6. Customize
 블로그 포스팅은 ___posts__ 폴더에서 진행  
