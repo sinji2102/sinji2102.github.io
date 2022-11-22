@@ -1,6 +1,6 @@
 # [sinji2102.github.io](https://sinji2102.github.io/)
 
-![mainpage](assets/img/profile.jpg)
+![mainpage](assets/img/mainpage.jpg)
 
 ## Build 과정
 
