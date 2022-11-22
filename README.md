@@ -35,7 +35,7 @@ Jekyll 시작하기
 localhost:4000 접속
 
 * LoadError 발생 시 webrick 파일 설치
-`bundle add webrick`
+`bundle add webtick`
 
 ### 5. 테마 적용하기
 - [다음](http://jekyllthemes.org/)에서 원하는 테마 선택
@@ -44,8 +44,8 @@ localhost:4000 접속
 - [원하는 테마](https://github.com/kssim/ap)를 git clone해서 로컬에 받아오기
 ![ThemeClone](assets/img/ThemeClone.jpg)
 
-- 테마 파일들을 로컬 저장소에 반영하기  
-- 이때, 의존성을 감안하여 _posts를 제외하고 테마를 덮어쓰기
+테마 파일들을 로컬 저장소에 반영하기  
+이때, 의존성을 감안하여 _posts를 제외하고 테마를 덮어쓰기
 
 ### 6. Customize
 블로그 포스팅은 ___posts__ 폴더에서 진행  
@@ -63,19 +63,19 @@ type: "type"
 위와 같은 형식으로 Post 문서를 작성  
 Markdown 형식을 통해 내용 작성
 
-- **홈 화면**
+**- 홈 화면**
 ![mainpage](assets/img/mainpage.jpg)
 
-- **포트폴리오**
+**- 포트폴리오**
 ![portfolio](assets/img/portfolio.jpg)
 
-- **gitblog 페이지**
+**- gitblog 페이지**
 ![gitblog](assets/img/gitblog.jpg)
 
-- **github 연동**
+**- github 연동**
 ![github](assets/img/github.jpg)
 
-- **instagram**
+**- instagram**
 ![instagram](assets/img/instagram.jpg)
 
 ### 7. 댓글 기능 추가
@@ -121,3 +121,10 @@ comment:
 {% endif %}
 ```
 11. 댓글을 허용하고 싶은 곳에 `comments: true`로 지정
+
+### PLUS. 원격에서 깨지는 문제 해결
+localhost:4000에서는 잘 나오는데 원격에서는 내용이 깨져서 나오는 문제 발생
+_config.yml에서 baseurl 삭제  
+![baseurl](assets/img/baseurl.jpg)
+
+- 이전에는 `bundle exec jekyll serve --baseurl`으로 실행해야 했으나, 주석 처리 하면 `bundle exec jekyll serve`으로 실행 가능
