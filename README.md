@@ -63,6 +63,21 @@ type: "type"
 위와 같은 형식으로 Post 문서를 작성  
 Markdown 형식을 통해 내용 작성
 
+**- 홈 화면**
+![mainpage](assets/img/mainpage.jpg)
+
+**- 포트폴리오**
+![portfolio](assets/img/portfolio.jpg)
+
+**- gitblog 페이지**
+![gitblog](assets/img/gitblog.jpg)
+
+**- github 연동**
+![github](assets/img/github.jpg)
+
+**- instagram**
+![instagram](assets/img/instagram.jpg)
+
 ### 7. 댓글 기능 추가
 1. [Disqus](https://disqus.com) 가입  
 2. "I want to install Disqus on my site" 선택  
