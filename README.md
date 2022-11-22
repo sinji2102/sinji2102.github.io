@@ -35,7 +35,7 @@ Jekyll 시작하기
 localhost:4000 접속
 
 * LoadError 발생 시 webrick 파일 설치
-`bundle add webtick`
+`bundle add webick`
 
 ### 5. 테마 적용하기
 - [다음](http://jekyllthemes.org/)에서 원하는 테마 선택
