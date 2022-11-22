@@ -7,12 +7,12 @@
 Github에서 \<username>.github.io 이름의 Repository 생성
 
 ### 2. Local-Remote Repository 연동
-Remote Repository의 주소를 복사한 후  
-`git clone <복사한 Remote Repository의 주소> <path>`로 clone  
-`git commit -m "<commit msg>"`로 커밋 남기기  
-`git branch -M main`으로 현재 branch의 이름을 main으로 변경  
-`git status`로 현재 상태 확인 후 `git add .`로 변경파일 추가  
-`git push origin main`으로 main에 로컬 변경사항 push  
+1. Remote Repository의 주소를 복사한 후  
+2. `git clone <복사한 Remote Repository의 주소> <path>`로 clone  
+3. `git commit -m "<commit msg>"`로 커밋 남기기  
+4. `git branch -M main`으로 현재 branch의 이름을 main으로 변경  
+5. `git status`로 현재 상태 확인 후 `git add .`로 변경파일 추가  
+6. `git push origin main`으로 main에 로컬 변경사항 push  
 
 ### 3. Jekyll 설치
 [Windows용 Jekyll 가이드 참조](https://jekyllrb-ko.github.io/docs/installation/windows/)
@@ -64,15 +64,15 @@ type: "type"
 Markdown 형식을 통해 내용 작성
 
 ### 7. 댓글 기능 추가
-[Disqus](https://disqus.com) 가입  
-"I want to install Disqus on my site" 선택  
-사이트 정보 입력 (이때, **Website Name 기억해두기**) 
-Platform 중 **Jekyll** 선택  
-Install Instruction을 읽어본 후 **Configure**를 눌러 다음을 진행  
-**Website URL**에 사이트 주소(https://sinji2102.github.io/) 입력 후 Next로 이동  
-Comment 정책 선택 (Balanced와 Strict 중 나는 Balanced 선택)  
-**Complete Setup**을 눌러 설정 마무리  
-_config.yml에 다음과 같은 key-value 추가
+1. [Disqus](https://disqus.com) 가입  
+2. "I want to install Disqus on my site" 선택  
+3. 사이트 정보 입력 (이때, **Website Name 기억해두기**) 
+4. Platform 중 **Jekyll** 선택  
+5. Install Instruction을 읽어본 후 **Configure**를 눌러 다음을 진행  
+6. **Website URL**에 사이트 주소(https://sinji2102.github.io/) 입력 후 Next로 이동  
+7. Comment 정책 선택 (Balanced와 Strict 중 나는 Balanced 선택)  
+8. **Complete Setup**을 눌러 설정 마무리  
+9. _config.yml에 다음과 같은 key-value 추가
 ```
 # Custom vars
 version: 1.1.0
@@ -82,7 +82,7 @@ comment:
   disqus:
     shortname: "sinji2102"
 ```
-_layout/post.html을 페이지에 맞게 수정
+10. _layout/post.html을 페이지에 맞게 수정
 ```
 {% if page.comment %}
 <h2>Comment</h2>
@@ -105,4 +105,4 @@ _layout/post.html을 페이지에 맞게 수정
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
 ```
-댓글을 허용하고 싶은 곳에 `comments: true`로 지정
+11. 댓글을 허용하고 싶은 곳에 `comments: true`로 지정
