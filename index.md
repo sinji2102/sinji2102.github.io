@@ -7,6 +7,7 @@ layout: about
 I am a freshman at Kookmin University.
 I am interested in app development, web development, and game development.
 If you are curious about my portfolio, please check the **Portfolio** at the top right.
+유레카 프로젝트 과제 Post의 경우 **Portfolio**상단의 **gitblog**입니다.
 
 <br/>
 
