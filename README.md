@@ -50,6 +50,7 @@ localhost:4000 접속
 ### 6. Customize
 블로그 포스팅은 ___posts__ 폴더에서 진행  
 _post에 __YYYY-MM-DD-TITLE.md__ 형태로 새로운 문서를 작성
+![post](assets/img/post.jpg)
 ```
 ---
 layout: post
@@ -58,3 +59,47 @@ title: "제목"
 ```
 위와 같은 형식으로 Post 문서를 작성  
 Markdown 형식을 통해 내용 작성
+
+### 7. 댓글 기능 추가
+[Disqus](https://disqus.com) 가입  
+"I want to install Disqus on my site" 선택  
+사이트 정보 입력 (이때, **Website Name 기억해두기**) 
+Platform 중 **Jekyll** 선택  
+Install Instruction을 읽어본 후 **Configure**를 눌러 다음을 진행
+**Website URL**에 사이트 주소(https://sinji2102.github.io/) 입력 후 Next로 이동
+Comment 정책 선택 (Balanced와 Strict 중 나는 Balanced 선택함)  
+**Complete Setup**을 눌러 설정 마무리
+_config.yml에 다음과 같은 key-value 추가
+```
+# Custom vars
+version: 1.1.0
+google_analytics_id: #UA-XXXX-Y
+comment:
+  provider: "disqus"
+  disqus:
+    shortname: "sinji2102"
+```
+_layout/post.html을 페이지에 맞게 수정
+```
+{% if page.comment %}
+<h2>Comment</h2>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sinji2102.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+```
+댓글을 허용하고 싶은 곳에 `comments: true`로 지정
