@@ -9,18 +9,18 @@ permalink: ':title/'
 blog_theme: light # Or use dark
 
 # Profile information
-name: 윤신지
+name: Sinji Yun
 tagline: FrontEnd Developer
 about-description: # Add Discription
 pic: 79.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
 # Contact links
-email: artemsheludko@tuta.io # Add your Email address
+email: sinji.3010@gmail.com # Add your Email address
 phone: 010-2247-9474 # Add your Phone number
-website: artemsheludko.pw # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
+website: velog.io/@dawnww/posts # Add your website, do not add http://
+# linkedin: # Add your Linkedin handle
 github: sinji2102 # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
+# twitter: '@artemsheludko_' # Add your Twitter handle
 
 # Tracker
 analytics:
