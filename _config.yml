@@ -6,20 +6,20 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sinji2102.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
-blog_theme: dark # Or use dark
+blog_theme: light # Or use dark
 
 # Profile information
-name: Wendell Thomas
-tagline: Full Stack Developer
+name: 윤신지
+tagline: FrontEnd Developer
 about-description: # Add Discription
 pic: 79.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
 # Contact links
 email: artemsheludko@tuta.io # Add your Email address
-phone: 044 825 5523 # Add your Phone number
+phone: 010-2247-9474 # Add your Phone number
 website: artemsheludko.pw # Add your website, do not add http://
 linkedin: # Add your Linkedin handle
-github: artemsheludko # Add your Github handle
+github: sinji2102 # Add your Github handle
 twitter: '@artemsheludko_' # Add your Twitter handle
 
 # Tracker
