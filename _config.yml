@@ -1,49 +1,49 @@
-title: sinji blog
-description: > # this means to ignore newlines until "baseurl:"
-  저를 소개하는 블로그입니다.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sinji2102.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: ':title/'
-blog_theme: light # Or use dark
 
-# Profile information
-name: Sinji Yun
-tagline: FrontEnd Developer
-about-description: 문제를 해결할 때 기쁨을 느끼는 웹 개발자 윤신지입니다. 어쩌고 저쩌고 자기소개 작성해 주시면 됩니다! 용문고 학생들 파이팅하세요 🔥
-pic: 79.jpg  
+title: Catbook #Your awesome title
+email: #youremail@domain.com
+description: > # this means to ignore newlines until "baseurl"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-# Contact links
-email: sinji.3010@gmail.com # Add your Email address
-phone: 010-2247-9474 # Add your Phone number
-website: velog.io/@dawnww/posts # Add your website, do not add http://
-github: sinji2102 # Add your Github handle
-instagram: 'd_awnww'
+baseurl: # the subpath of the site
+url: http://starry99.github.io/catbook # the base hostname & protocol for your site
 
-# Tracker
-analytics:
+permalink: /:year-:month/:title
+timezone:
 
-# Comments
-discus-identifier: # Add your Disqus identifier
+favicon: /assets/img/favicon.ico
 
-# Important settings
-assets:
-  sources:
-    - assets/fonts
-    - assets/img
-    - assets/js
-    - assets/stylesheets
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+    app_id: #your cusdis app_id
 
-# Build settings
+user:
+  name: Catbook
+  pic: /assets/img/cat.jpg
+  picAlt: "catbook"
+  job: a category-centric theme
+  aboutme: true # comment this out if you don't need the 'about' page.
+
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - README.md
+  - LICENSE
+  - github
 
-gems:
-  - jekyll-feed
-  - jekyll-assets
-exclude:
-  - Gemfile
-  - Gemfile.lock
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true   
 
-include: [_pages]
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown 
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
