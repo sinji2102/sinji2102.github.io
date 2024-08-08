@@ -1,45 +1,52 @@
-title: Sinji Blog #Your awesome title
-email: sinji.3010@gmail.com #youremail@domain.com
-description: 블로그에 대한 간단한 설명을 추가해 주세요~
+title: Wendell Thomas
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sinji2102.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+blog_theme: dark # Or use dark
 
-baseurl: # the subpath of the site
-url: https://sinji2102.github.io/ # the base hostname & protocol for your site
+# Profile information
+name: Wendell Thomas
+tagline: Full Stack Developer
+about-description: # Add Discription
+pic: 79.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
-permalink: /:year-:month/:title
-timezone:
+# Contact links
+email: artemsheludko@tuta.io # Add your Email address
+phone: 044 825 5523 # Add your Phone number
+website: artemsheludko.pw # Add your website, do not add http://
+linkedin: # Add your Linkedin handle
+github: artemsheludko # Add your Github handle
+twitter: '@artemsheludko_' # Add your Twitter handle
 
-favicon: /assets/img/favicon.ico
+# Tracker
+analytics:
 
-google_analytics: #UA—XXXXXXXX-X
-disqus_shortname: #disqus shortname
-cusdis:
-  app_id: #your cusdis app_id
+# Comments
+discus-identifier: # Add your Disqus identifier
 
-user:
-  name: Sinji Yun
-  pic: /assets/img/profile.jpg
-  picAlt: "catbook"
-  job: 웹 개발자
-  aboutme: true # comment this out if you don't need the 'about' page.
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets
 
+# Build settings
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
-  - LICENSE
-  - github
 
-defaults:
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      comment: true
+gems:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown
-
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future: false
-unpublished: false
+include: [_pages]

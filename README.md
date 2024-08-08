@@ -1,35 +1,28 @@
-# Catbook
-CATbook is a CATegory-centric Jekyll theme for bloggers. There is a switch button to toggle between dark mode and light mode. This theme is originally inspired from [Book](https://github.com/kkninjae/book).
+# The Monday Jekyll theme
+=========================
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-1.0-green.svg)
+Dark Theme:
+![](assets/img/documentation/dark.png)
 
-**Demo:** https://starry99.github.io/catbook/
+Light Theme:
+![](assets/img/documentation/light.png)
 
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/lmode.jpg)
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/dmode.jpg)
+# Demo
+View this jekyll theme in action [here](http://artemsheludko.pw/monday/)
 
-## Setup
+Integrations
+  - [Google Fonts](https://fonts.google.com/)
+  - [Google Analytics](https://analytics.google.com/analytics/web/)
+  - [Disqus](https://disqus.com/)
+  - [Font Awesome](http://fontawesome.io/)
+  - Social media links
 
-```sh
-$ git clone https://github.com/starry99/catbook
-$ jekyll serve
+# How to Use
 
-# Now you can start customization!
-```
-
-## Make it yours
-
-If you want to create a new category, you need to create `*name*.html` in the `categories` folder. And add the following content:
-```html
----
-layout: page
-type: *name*
----
-
-{% include archive.html %}
-```
-Then the number of pages in the category will be displayed.
+  For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details,
+  or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
+  and [creating pages](https://jekyllrb.com/docs/pages/).
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT)
+GPL-v3.0
