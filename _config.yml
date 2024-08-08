@@ -10,11 +10,7 @@ blog_theme: light # Or use dark
 name: Yun Sinji
 tagline: FrontEnd Developer
 about-description: 저는 국민대학교에 재학 중인 22살 윤신지입니다. 용문고 학생들 파이팅 하세요!
-
-## 여기까지 수정하고 git bash 열기
-
-
-pic: 79.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
+pic: 쿠민.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
 # Contact links
 email: artemsheludko@tuta.io # Add your Email address
